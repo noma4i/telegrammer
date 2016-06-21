@@ -48,6 +48,8 @@ require 'telegrammer/data_types/location'
 require 'telegrammer/data_types/message'
 require 'telegrammer/data_types/reply_keyboard_hide'
 require 'telegrammer/data_types/reply_keyboard_markup'
+require 'telegrammer/data_types/reply_keyboard_markup_custom'
+require 'telegrammer/data_types/reply_keyboard_markup_custom_button'
 require 'telegrammer/data_types/update'
 require 'telegrammer/data_types/user_profile_photos'
 
