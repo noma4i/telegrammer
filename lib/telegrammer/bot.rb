@@ -526,6 +526,7 @@ module Telegrammer
           params[key] = value.to_s if value.class == Fixnum
           params[key] = value.to_h.to_json if [
             Telegrammer::DataTypes::ReplyKeyboardMarkup,
+            Telegrammer::DataTypes::ReplyKeyboardMarkupCustom,
             Telegrammer::DataTypes::ReplyKeyboardHide,
             Telegrammer::DataTypes::ForceReply
           ].include?(value.class)
@@ -554,6 +555,7 @@ module Telegrammer
         reply_to_message_id: { required: false, class: [String] },
         reply_markup: { required: false, class: [
           Telegrammer::DataTypes::ReplyKeyboardMarkup,
+          Telegrammer::DataTypes::ReplyKeyboardMarkupCustom,
           Telegrammer::DataTypes::ReplyKeyboardHide,
           Telegrammer::DataTypes::ForceReply
         ] }
